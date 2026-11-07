@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salon de Coiffure Amy — Coiffure et tresses africaines à Jonquière, Saguenay</title>
+<style>:root{--bg:#1d1030;--panel:#2a1845;--ink:#f4ecff;--acc:#f2a93b;--mut:#c3aee0}body{margin:0;font-family:Sora,'Segoe UI',sans-serif;background:var(--bg);color:var(--ink)}h1,h2{font-family:Fraunces,Georgia,serif}header{display:flex;justify-content:space-between;align-items:center;padding:18px 26px;border-bottom:3px solid var(--acc)}.brand{font-size:26px;font-weight:800}.hero{padding:44px 26px;background:radial-gradient(circle at 85% 20%,#3d2266,#1d1030 65%)}.hero h1{font-size:40px;margin:8px 0;max-width:620px}.btn{display:inline-block;background:var(--acc);color:#1d1030;padding:12px 26px;text-decoration:none;font-weight:800;border-radius:6px}main{max-width:940px;margin:0 auto;padding:24px 20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.card{background:var(--panel);border-left:4px solid var(--acc);padding:14px 16px}table{width:100%;border-collapse:collapse}td{padding:7px 4px;border-bottom:1px solid #3d2266}form{display:grid;gap:10px;max-width:520px}input,select,textarea{width:100%;padding:10px;background:#150a24;border:1px solid #54357f;color:var(--ink);font:inherit;border-radius:6px}button{background:var(--acc);color:#1d1030;border:0;padding:12px;font:inherit;font-weight:800;cursor:pointer;border-radius:6px}.disc,.formnote{font-size:13px;color:var(--mut)}.ref{font-weight:800;color:var(--acc)}footer{padding:22px 26px;font-size:14px;border-top:3px solid var(--acc);color:var(--mut)}a{color:var(--acc)}</style>
+</head>
+<body>
+<header><div class="brand">Salon de Coiffure Amy</div><a class="btn" href="tel:+14184123740">Appeler le salon: (418) 412-3740</a></header>
+<section class="hero"><h1>Tresses africaines, rallonges et coiffure pour homme — sans rendez-vous</h1><p>Le Salon de Coiffure Amy, rue Saint-Dominique à Jonquière (Saguenay), offre des rallonges de cheveux et des tresses africaines, naturelles ou avec rallonges — ainsi qu'un service de coiffure pour homme sans rendez-vous.</p><p><a class="btn" href="tel:+14184123740">(418) 412-3740</a></p></section>
+<main>
+<h2 id="services">Services</h2>
+<div class="grid"><div class="card">Tresses africaines</div><div class="card">Rallonges de cheveux</div><div class="card">Coupe pour homme</div><div class="card">Coupe pour enfant</div><div class="card">Rasage à la serviette chaude</div><div class="card">Taille de barbe</div><div class="card">Rasage de tête</div><div class="card">Massage</div></div>
+<h2 id="hours">Heures d'ouverture</h2>
+<table><tr><td>Lundi</td><td>Fermé</td></tr><tr><td>Mardi</td><td>9 h 30 – 17 h</td></tr><tr><td>Mercredi</td><td>9 h 30 – 17 h</td></tr><tr><td>Jeudi</td><td>9 h 30 – 17 h</td></tr><tr><td>Vendredi</td><td>9 h 30 – 17 h</td></tr><tr><td>Samedi</td><td>8 h 30 – 12 h</td></tr><tr><td>Dimanche</td><td>Fermé</td></tr></table>
+<h2 id="visit">Nous trouver</h2>
+<p>2321 Rue Saint-Dominique, Saguenay (Jonquière), QC G7X 6L9<br><a href="tel:+14184123740">(418) 412-3740</a></p>
+<h2 id="book">Demander un rendez-vous</h2>
+<form id="req" novalidate>
+<label>Votre nom<input required type="text" name="name" placeholder="votre nom"></label>
+<label>Téléphone<input required type="tel" name="phone" placeholder="(000) 000-0000"></label>
+<label>Service souhaité<select name="service"><option>Tresses africaines</option><option>Rallonges de cheveux</option><option>Coupe pour homme</option><option>Coupe pour enfant</option><option>Rasage à la serviette chaude</option><option>Taille de barbe</option><option>Rasage de tête</option><option>Massage</option></select></label>
+<label>Message (optionnel)<textarea name="msg" rows="3"></textarea></label>
+<button type="submit">Envoyer la demande</button>
+<p class="formnote">Ce formulaire de concept n'envoie rien pour l'instant — il affiche une référence locale pour montrer le fonctionnement.</p>
+<p class="disc">Aperçu conceptuel — ceci est un concept de site web, pas le site officiel de Salon de Coiffure Amy.</p>
+<p id="ref" class="ref" hidden></p>
+</form>
+<script>
+document.getElementById('req').addEventListener('submit',function(e){e.preventDefault();
+var r='AMY54-'+Math.floor(10000+Math.random()*90000);
+var el=document.getElementById('ref');el.hidden=false;
+el.textContent="Merci! Votre référence de demande est "+r+". Sur le vrai site, cette demande arriverait directement au salon.";});
+</script>
+</main>
+<footer><p>Salon de Coiffure Amy — 2321 Rue Saint-Dominique, Saguenay (Jonquière), QC G7X 6L9 — <a href="tel:+14184123740">(418) 412-3740</a></p><p>Aperçu conceptuel — ceci est un concept de site web, pas le site officiel de Salon de Coiffure Amy.</p></footer>
+</body>
+</html>
